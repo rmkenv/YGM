@@ -22,7 +22,7 @@ BUFFER_DISTANCE_METERS = BUFFER_DISTANCE_FEET * 0.3048  # Convert feet to meters
 
 # Data source URLs
 DATA_SOURCES = {
-    "property_data": "https://geodata.md.gov/imap/rest/services/PlanningCadastre/MD_PropertyData/MapServer/0/query?outFields=*&where=1%3D1&f=geojson",
+    "property_data": "https://geodata.md.gov/imap/services/PlanningCadastre/MD_PropertyData/MapServer/WFSServer?request=GetCapabilities&service=WFS",
     "roads": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/MDOT_Know_Your_Roads/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson",
     "wetlands": "https://geodata.md.gov/imap/services/Hydrology/MD_Wetlands/MapServer/WFSServer?request=GetCapabilities&service=WFS",
     "floodplain": "https://geodata.md.gov/imap/rest/services/Hydrology/MD_Floodplain/FeatureServer/1/query?outFields=*&where=1%3D1&f=geojson"
